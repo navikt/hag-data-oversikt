@@ -1,6 +1,6 @@
 # hag-data-oversikt
 
-En rekke SQL spørringer for å hente statestikk
+En rekke SQL spørringer for å hente statistikk
 
 ## Getting started
 For å kjøre en spørring i LPS-API:

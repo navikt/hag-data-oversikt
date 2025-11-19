@@ -15,6 +15,7 @@ WITH sykmelding_id_counts AS (
 )
 SELECT
     COUNT(*) AS antall_vedtaksperiode_ider,
+    ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (),4) AS prosent_av_vedtaksperiode_ider,
     antall_knyttet_sykmelding_ider AS knyttet_til_N_sykmelding_ider
 FROM sykmelding_id_counts
 GROUP BY antall_knyttet_sykmelding_ider
